@@ -1,14 +1,15 @@
 import { Container, Table } from 'react-bootstrap'
 import { connectToDatabase } from '@/mongo'
+import Link from 'next/link'
 
 export default function Home({ users }: any) {
   return (
     <Container style={{ marginTop: '50px' }}>
       <div className="d-flex justify-content-between mb-4">
         <h1>Users</h1>
-        <a href="/signup" className="btn btn-primary" style={{ height: 'fit-content' }}>
+        <Link href="/signup" className="btn btn-primary" style={{ height: 'fit-content' }}>
           Sign Up
-        </a>
+        </Link>
       </div>
       <Table>
         <thead>
