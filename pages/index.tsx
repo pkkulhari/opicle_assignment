@@ -4,7 +4,12 @@ import { connectToDatabase } from '@/mongo'
 export default function Home({ users }: any) {
   return (
     <Container style={{ marginTop: '50px' }}>
-      <h1>Users</h1>
+      <div className="d-flex justify-content-between mb-4">
+        <h1>Users</h1>
+        <a href="/signup" className="btn btn-primary" style={{ height: 'fit-content' }}>
+          Sign Up
+        </a>
+      </div>
       <Table>
         <thead>
           <tr>
